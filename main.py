@@ -65,7 +65,19 @@ def get_hydration_choice():
 
 
 # Get input from the user for flour weight (in grams)
-flour_weight = float(input("Enter the weight of flour you have (in grams): "))
+# flour_weight = float(input("Enter the weight of flour you have (in grams): "))
+
+# Get input from the user for flour weight (in grams) with input validation
+while True:
+  flour_weight_input = input("Enter the weight of flour you have (in grams): ")
+  try:
+    flour_weight = float(flour_weight_input)
+    if flour_weight > 0:
+      break  # Break out of the loop if the input is valid
+    else:
+      print("Please enter a positive number for the flour weight.")
+  except ValueError:
+    print("Please enter a number.")
 
 # Get the user's choice of hydration percentage and recipe name
 hydration_percentage, selected_recipe = get_hydration_choice()
