@@ -95,7 +95,3 @@ for ingredient, weight in measurements.items():
 
 # Add a message to wish the baker good luck
 print("Wishing you good luck in your baking adventures!")
-
-# Making a change to test GIT
-
-# Another change to test GIT here
