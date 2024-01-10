@@ -104,6 +104,3 @@ for ingredient, weight in measurements.items():
   else:
     formatted_weight = '{:.1f}'.format(weight)
     print(f"{ingredient}: {formatted_weight.rstrip('0').rstrip('.')} g")
-
-# Add a message to wish the baker good luck
-print("Wishing you good luck in your baking adventures!")
