@@ -104,3 +104,4 @@ for ingredient, weight in measurements.items():
   else:
     formatted_weight = '{:.1f}'.format(weight)
     print(f"{ingredient}: {formatted_weight.rstrip('0').rstrip('.')} g")
+
